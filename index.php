@@ -1,10 +1,12 @@
 <?php
 
 	    session_start();
+	    
+	    //Change base url with your local URL
+	    $base_url = 'http://localhost';
 
-	    $base_url = 'http://ca916930696a.ngrok.io';
-
-		$mysqli = new mysqli("localhost","root","","core");
+	    //Update database information
+		$mysqli = new mysqli("localhost","username","password","db");
 
 		if ($mysqli->connect_errno) {
 
